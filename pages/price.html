@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="ko" data-bs-theme="auto">
   <head>
-    <script src="./assets/color-modes.js"></script>
-    <script src="./assets/bootstrap.bundle.min.js" defer></script>
-    <link href="./assets/bootstrap.min.css" rel="stylesheet">
-    <link href="./assets/plus.css" rel="stylesheet">
-    <link href="./assets/pricing.css" rel="stylesheet">
-    
+    <script src="../assets/color-modes.js"></script>
+    <script src="../assets/bootstrap.bundle.min.js" defer></script>
+    <link href="../assets/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/plus.css" rel="stylesheet">
+    <link href="../assets/pricing.css" rel="stylesheet">
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -50,19 +50,14 @@
         </div>
       </main>
 
-      <div>
-        <img src="./assets/detail1.jpg" alt="">
-        <img src="./assets/detail2.jpg" alt="">
-      </div>
-
       <footer class="pt-4 my-md-5 pt-md-5 border-top" id="footerin"></footer>
 
     </div>
 
     <script>
-      fetch('./parts/footer.html').then(response => response.text()).then(data => document.getElementById('footerin').innerHTML = data);
-      fetch('./parts/plus.html').then(response => response.text()).then(data => document.getElementById('plus').innerHTML = data);
-      fetch('./parts/header.html').then(response => response.text()).then(data => document.getElementById('headerin').innerHTML = data);
+      fetch('../parts/footer.html').then(response => response.text()).then(data => document.getElementById('footerin').innerHTML = data);
+      fetch('../parts/plus.html').then(response => response.text()).then(data => document.getElementById('plus').innerHTML = data);
+      fetch('../parts/header.html').then(response => response.text()).then(data => document.getElementById('headerin').innerHTML = data);
     </script>
 
   </body>
